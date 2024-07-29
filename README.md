@@ -10,6 +10,7 @@ This is a simple Notes application that allows users to register, log in, and ma
 - View and edit existing notes
 - Delete notes
 - Notes are persisted in local storage
+- Responsive design
 - Easy-to-use UI with Chakra UI components
 
 ## Getting Started
