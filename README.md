@@ -102,7 +102,7 @@ The frontend is a simple HTML, CSS, JavaScript React and Redux application.
 
 The notes are stored in the browser's local storage. This ensures that the notes persist between page reloads.
 
-##Screenshots
+## Screenshots
 
 ![Screenshot (349)](https://github.com/user-attachments/assets/c89a51ea-34a3-40c3-afce-bb041cba28f9)
 ![Screenshot (350)](https://github.com/user-attachments/assets/a78409dd-b943-4163-bd84-bf76d4a7b303)
