@@ -23,7 +23,7 @@ This is a simple Notes application that allows users to register, log in, and ma
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/notes-app.git
+    git clone https://github.com/UmerAhmad9126/bahikhata-assignments.git
     ```
 2. Navigate to the project directory:
     ```bash
@@ -101,3 +101,12 @@ The frontend is a simple HTML, CSS, JavaScript React and Redux application.
 ### Local Storage
 
 The notes are stored in the browser's local storage. This ensures that the notes persist between page reloads.
+
+##Screenshots
+
+![Screenshot (349)](https://github.com/user-attachments/assets/c89a51ea-34a3-40c3-afce-bb041cba28f9)
+![Screenshot (350)](https://github.com/user-attachments/assets/a78409dd-b943-4163-bd84-bf76d4a7b303)
+![Screenshot (351)](https://github.com/user-attachments/assets/dde2c4d5-4e5b-46ff-8a78-261f963a9724)
+![Screenshot (352)](https://github.com/user-attachments/assets/1e38a72e-63a9-4955-826f-89406d3741a1)
+![Screenshot (348)](https://github.com/user-attachments/assets/b2a9614c-c765-435c-aa9d-ff1f612fbc1a)
+
