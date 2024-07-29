@@ -18,7 +18,7 @@ const userFailureAction = () => {
 // Register/signup
 export const addUser = (payload) => (dispatch) => {
     dispatch(userRequestAction());
-    axios.post("http://localhost:8080/user/register/", payload)
+    axios.post("https://bahikhata-assignments.onrender.com/user/register/", payload)
         .then((res) => {
             console.log('res:', res.data);
             dispatch(userSuccessAction());

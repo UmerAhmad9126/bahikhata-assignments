@@ -21,7 +21,7 @@ const loginSuccesAction = (payload) => {
 export const login = (payload) => (dispatch) => {
 
     dispatch(loginRequestAction());
-    axios.post("http://localhost:8080/user/login", payload)
+    axios.post("https://bahikhata-assignments.onrender.com/user/login", payload)
         .then((res) => {
             console.log('res:', res);
             dispatch(loginSuccesAction(res.data.token));
