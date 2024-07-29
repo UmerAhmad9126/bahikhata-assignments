@@ -99,13 +99,13 @@ export default function SignupPage() {
                             <Box>
                                 <FormControl id="userName" isRequired>
                                     <FormLabel color={"black"}>User Name</FormLabel>
-                                    <Input type="text" value={user.username} name="username" placeholder='Enter User Name' onChange={handleChange} />
+                                    <Input type="text" color={"black"} value={user.username} name="username" placeholder='Enter User Name' onChange={handleChange} />
                                 </FormControl>
                             </Box>
                             <Box>
                                 <FormControl id="email" isRequired>
                                     <FormLabel color={"black"}>Email address</FormLabel>
-                                    <Input type="email" value={user.email} name="email" placeholder='Enter Email' onChange={handleChange} />
+                                    <Input type="email" color={"black"} value={user.email} name="email" placeholder='Enter Email' onChange={handleChange} />
                                 </FormControl>
                             </Box>
                         </HStack>
