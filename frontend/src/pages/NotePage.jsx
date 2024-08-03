@@ -22,6 +22,7 @@ import { useNavigate } from "react-router-dom";
 import { HamburgerIcon } from "@chakra-ui/icons";
 
 function NotePage() {
+
     const [notes, setNotes] = useState([]);
     const [selectedNoteId, setSelectedNoteId] = useState(null);
     const [noteContent, setNoteContent] = useState("");
@@ -29,9 +30,11 @@ function NotePage() {
     const navigate = useNavigate();
     const isDrawer = useBreakpointValue({ base: true, md: false });
 
+
     useEffect(() => {
         const savedNotes = JSON.parse(localStorage.getItem("notes")) || [];
         setNotes(savedNotes);
+
         if (savedNotes.length > 0) {
             setSelectedNoteId(savedNotes[0].id);
             setNoteContent(savedNotes[0].content);
@@ -44,9 +47,10 @@ function NotePage() {
 
     const handleNewNote = () => {
         const newNote = {
-            id: Date.now(),
+            id: new Date(),
             content: "",
         };
+
         setNotes([newNote, ...notes]);
         setSelectedNoteId(newNote.id);
         setNoteContent("");
@@ -73,7 +77,9 @@ function NotePage() {
     };
 
     const handleContentChange = (e) => {
+
         setNoteContent(e.target.value);
+
         setNotes(
             notes.map((note) =>
                 note.id === selectedNoteId ? { ...note, content: e.target.value } : note
@@ -98,7 +104,7 @@ function NotePage() {
                 <>
                     <IconButton
                         aria-label="Open menu"
-                        icon={<HamburgerIcon  />}
+                        icon={<HamburgerIcon />}
                         size="lg"
                         onClick={onOpen}
                         m={4}
@@ -106,7 +112,7 @@ function NotePage() {
                     <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
                         <DrawerOverlay>
                             <DrawerContent>
-                                <DrawerCloseButton color={"#ffff"}/>
+                                <DrawerCloseButton color={"#ffff"} />
                                 <DrawerHeader bg="gray.800" color={"#ffff"}>All Notes</DrawerHeader>
                                 <DrawerBody bg="gray.800">
                                     <VStack align="start" spacing={4}>
@@ -170,6 +176,8 @@ function NotePage() {
                                     isSelected={note.id === selectedNoteId}
                                     onClick={() => handleSelectNote(note.id)}
                                     onDelete={() => handleDeleteNote(note.id)}
+                                    id={note.id}
+                                    Time={note.Time}
                                 />
                             ))}
                         </Box>

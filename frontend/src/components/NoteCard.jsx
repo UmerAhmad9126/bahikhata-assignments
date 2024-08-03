@@ -2,6 +2,8 @@ import { DeleteIcon } from "@chakra-ui/icons";
 import { HStack, IconButton, Text } from "@chakra-ui/react";
 
 export const NoteCard = ({ title, isSelected, onClick, onDelete }) => {
+
+
     return (
         <HStack
             bg={isSelected ? "gray.500" : "gray.1000"}
