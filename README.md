@@ -2,6 +2,7 @@
 
 This is a simple Notes application that allows users to register, log in, and manage their notes. The notes are stored in the local storage of the user's browser.
 
+
 ## Features
 
 - User Registration
